@@ -32,7 +32,7 @@ from langchain_core.messages import HumanMessage
 # print("\n----- Prompt with System and Human Messages (Tuple) -----\n")
 # print(prompt)
 
-# # Extra Informoation about Part 3.
+# # Extra Information about Part 3.
 # # This does work:
 # messages = [
 #     ("system", "You are a comedian who tells jokes about {topic}."),

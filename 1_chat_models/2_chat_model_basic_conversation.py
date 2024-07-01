@@ -9,12 +9,12 @@ load_dotenv()
 model = ChatOpenAI(model="gpt-4o")
 
 # SystemMessage:
-#   Message for priming AI behavior, usually passed in as the first of a sequenc of input messages.
+#   Message for priming AI behavior, usually passed in as the first of a sequence of input messages.
 # HumanMessagse:
 #   Message from a human to the AI model.
 messages = [
-    SystemMessage(content="Solve the following math problems"),
-    HumanMessage(content="What is 81 divided by 9?"),
+    SystemMessage(content="You are a realestate agent. A customer is asking you about housing in texas."),
+    HumanMessage(content="What areas are affordable and growing in Texas?"),
 ]
 
 # Invoke the model with messages
@@ -25,10 +25,10 @@ print(f"Answer from AI: {result.content}")
 # AIMessage:
 #   Message from an AI.
 messages = [
-    SystemMessage(content="Solve the following math problems"),
-    HumanMessage(content="What is 81 divided by 9?"),
-    AIMessage(content="81 divided by 9 is 9."),
-    HumanMessage(content="What is 10 times 5?"),
+    SystemMessage(content="You are a realestate agent. A customer is asking you about housing in texas."),
+    HumanMessage(content="What areas are affordable and growing in Texas?"),
+    AIMessage(content="Austin is a popular city in Texas. It is known for its affordable housing and growing job market."),
+    HumanMessage(content="What about Dallas?"),
 ]
 
 # Invoke the model with messages
